@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    arg = argv[2]    
+    arg = argv[2]
     a = int(argv[1])
     b = int(argv[3])
     if arg == "+":
