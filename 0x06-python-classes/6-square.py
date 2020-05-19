@@ -41,7 +41,6 @@ class Square:
 
     @property
     def position(self):
-
         """ position """
         return self.__position
 
