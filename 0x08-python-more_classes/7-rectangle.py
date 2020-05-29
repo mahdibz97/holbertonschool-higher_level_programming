@@ -32,7 +32,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-
     @height.setter
     def height(self, value):
         """height"""
@@ -41,7 +40,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
 
     def area(self):
         """area"""
