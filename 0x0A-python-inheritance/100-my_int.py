@@ -1,6 +1,5 @@
-
 #!/usr/bin/python3
-"""Define my class"""
+""" Define my class """
 
 
 class MyInt(int):
