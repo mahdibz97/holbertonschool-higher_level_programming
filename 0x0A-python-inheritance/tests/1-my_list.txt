@@ -1,0 +1,22 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList([4, 1, 9, 2])
+>>> my_list.print_sorted()
+[1, 2, 4, 9]
+>>> print(my_list)
+[4, 1, 9, 2]
+>>> my_list = MyList([-3, 0, 2])
+>>> my_list.print_sorted()
+[-3, 0, 2]
+>>> my_list = MyList([2, 2, -1, 1])
+>>> my_list.print_sorted()
+[-1, 1, 2, 2]
+>>> my_list.print_sorted()
+[0, 2, 5]
+>>> print(my_list)
+[2, 5, 0]
+>>> isinstance(my_list, list)
+True
+>>> issubclass(MyList, list)
+True
+>>> type(my_list) is MyList
+True
