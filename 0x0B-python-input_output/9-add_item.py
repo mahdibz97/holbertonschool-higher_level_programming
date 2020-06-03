@@ -12,7 +12,7 @@ load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 filename = "add_item.json"
 try:
     new = load_from_json_file(filename)
-finally:
+except:
     with open(filename, mode='w', encoding='UTF8') as f:
         f.write('')
         new = []
