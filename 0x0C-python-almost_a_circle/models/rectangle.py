@@ -7,6 +7,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """class Rectangle that inherits from Base"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """init"""
         super().__init__(id)
@@ -86,7 +87,7 @@ class Rectangle(Base):
         """str"""
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.__width, self.__height, self.__x, self.__y)
-  
+
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
         j = 0
