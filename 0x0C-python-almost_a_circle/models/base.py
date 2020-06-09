@@ -30,7 +30,14 @@ class Base:
         """ writes the JSON string representation of list_objs to a file"""
         file = cls.__name__ + ".json"
         with open(file, "w") as f:
-            l = []
+            li = []
             if list_objs is not None:
-                l = [item.to_dictionary() for item in list_objs]
-            f.write(Base.to_json_string(l))
+                li = [item.to_dictionary() for item in list_objs]
+            f.write(Base.to_json_string(li))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Update the class Base by adding the static method"""
+        if json_string is None:
+            return []
+        return json.loads(json_string)
