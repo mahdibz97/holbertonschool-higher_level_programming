@@ -43,4 +43,3 @@ class Square(Rectangle):
             for key, val in kwargs.items():
                 if hasattr(self, key) is True:
                     setattr(self, key, val)
-           
