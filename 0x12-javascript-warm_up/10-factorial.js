@@ -1,10 +1,10 @@
 #!/usr/bin/node
-function factorialize (num) {
-  if (num === 0 || num === 1 || (isNaN(process.argv[2])))
+function factorialize (numb) {
+  if (numb === 0 || numb === 1 || (isNaN(process.argv[2])))
     return 1;
-  for (let i = num - 1; i >= 1; i--) {
-    num *= i;
+  for (let i = numb - 1; i >= 1; i--) {
+    numb *= i;
   }
-  return num;
+  return numb;
 }
 console.log(factorialize(process.argv[2]));
